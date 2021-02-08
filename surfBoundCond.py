@@ -1,5 +1,5 @@
 # surfBoundCond.py
-# This code creates the sourface boundary conditions file for numerical simulations using SI3D.
+# This code creates the sourface boundary conditions file for numerical simulations using SI3D. Follow description of functions in si3dInputs.py
 # Copy Right Sergio A. Valbuena 2021
 # UC Davis - TERC
 # February 2021
