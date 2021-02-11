@@ -24,7 +24,7 @@ pi = math.pi
 
 # Import functions
 root = "C://Users/"
-user = "SV"
+user = "Sergio"
 func = "/Documents/Github/si3dInputs/"
 FuncPath = root + user + func
 sys.path.append(FuncPath)
@@ -38,12 +38,12 @@ del root, user, func, FuncPath
 surfbcType = 'RunTime2'
 # Specify the name of the site for the simulations
 LakeName = 'LakeTahoe'
-SimFolder = 'rho1L20H100f39W15'
+SimFolder = 'L10_H100_W15_N10_f40'
 # Specify the paths for existent data and where the file will be saved
-root = "G:/My Drive/Lake_Tahoe/Projects/"
-PathSave = root+"RotationalWeddeburnNumber/si3D/"+SimFolder
-PathFile = root+"Upwelling_3DModel/Met_data/LakeTahoe_metData"
-PathSecchiData = root+"Upwelling_3DModel/Secchi_data/Processed_0"
+root = "S:/SI3d/"
+PathSave = root+SimFolder
+PathFile = "G:/My Drive/Lake_Tahoe/Projects/Upwelling_3DModel/Met_data/LakeTahoe_metData"
+PathSecchiData = "G:/My Drive/Lake_Tahoe/Projects/Upwelling_3DModel/Secchi_data/Processed_0"
 # Fields of data
 Fields = ['WindSpeed','WindDir','P','AirTemp','RH','LWin','LWout','SWin','SWout','WaTemp']
 # Chose between heatbudget methods, Only applicable if 'Preprocess' is chosen as surfbcType
@@ -114,7 +114,6 @@ if HeatBudgetMethod =='AirSea':
     # Please define the method for the bulk longwave heat flux. Options are 'brunt' 'clark' 'hastenrath','efimova' 'bunker' 'anderson' 'swinbank' 'anderson' and 'berliand'. The last one considered to be the bestone.
     opt_blwhf = {'berliand'}
     dt_airsea = 1
-
 
 # ----------------------------- CODE SECTION ----------------------------------
 # Time zone management
